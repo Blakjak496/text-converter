@@ -19,7 +19,8 @@ function App() {
         if(index === 0) letters[0] = letters[0].toUpperCase();
         else {
           const previousWord = words[index-1];
-          if (previousWord[previousWord.length-1] === ".") letters[0] = letters[0].toUpperCase();
+          const lastChar = previousWord[previousWord.length-1];
+          if (lastChar === "." || lastChar === "!" || lastChar === "?") letters[0] = letters[0].toUpperCase();
         }
         output.push(letters.join(""));
       })
