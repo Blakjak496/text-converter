@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background: #232038;
   color: #f2eeec;
 }
@@ -38,11 +39,17 @@
   width: 90%;
   min-width: 280px;
   min-height: 280px;
-  border-radius: 15px 15px 0 15px;
+  max-width: 1000px;
+  border-radius: 12px 12px 0 12px;
   padding: 5px;
   background: #6e6f9b;
   color: #f2eeec;
   font-size: 1.2rem;
+}
+
+.app_converter-btn-box {
+  display: flex;
+  box-sizing: border-box;
 }
 
 .app_converter-btn {
@@ -53,10 +60,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
+  border-style: none;
   font-size: 1rem;
   margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   color: #f2eeec;
   background: #6827af;
+}
+
+.app_converter-btn:hover {
+  background: #606ca1;
 }
 
 .app_output {
